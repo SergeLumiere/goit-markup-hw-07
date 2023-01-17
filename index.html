@@ -28,7 +28,6 @@
 					<span class="logo-accent">WEB</span>
 					STUDIO
 				</a>
-
 				<nav class="nav">
 					<ul class="nav-list list">
 						<li class="nav-item"><a class="nav-item-link link current" href="./index.html">Studio</a></li>
@@ -36,7 +35,6 @@
 						<li class="nav-item"><a class="nav-item-link link" href="">Contacts</a></li>
 					</ul>
 				</nav>
-
 				<ul class="header-contacts list">
 					<li class="header-contacts-item">
 						<a class="header-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -45,6 +43,72 @@
 						<a class="header-contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
 					</li>
 				</ul>
+
+				<!-- MOBILE MENU -->
+				<button type="button" class="mobile-menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg class="mobile-menu-open-icon" width="32" height="22">
+						<use href="./images/sprites/sprite.svg#icon-menu-burger"></use>
+					</svg>
+				</button>
+				<div class="mobile-menu js-menu-container" id="mobile-menu">
+					<div class="container mobile-menu-container">
+						<button class="menu-close-button js-close-menu" type="button">
+							<svg class="menu-close-icon" width="8" height="8">
+								<use href="./images/sprites/sprite.svg#icon-close-modal"></use>
+							</svg>
+						</button>
+
+						<div class="mobile-nav">
+							<ul class="mobile-nav-list list">
+								<li class="mobile-nav-item">
+									<a class="mobile-nav-item-link link current" href="./index.html">Studio</a>
+								</li>
+								<li class="mobile-nav-item">
+									<a class="mobile-nav-item-link link" href="./portfolio.html">Portfolio</a>
+								</li>
+								<li class="mobile-nav-item"><a class="mobile-nav-item-link link" href="">Contacts</a></li>
+							</ul>
+						</div>
+						<ul class="mobile-header-contacts list">
+							<li class="mobile-header-contacts-item">
+								<a class="mobile-header-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+							<li class="mobile-header-contacts-item">
+								<a class="mobile-header-contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+							</li>
+						</ul>
+						<ul class="mobile-header-social-list list">
+							<li class="mobile-header-social-item">
+								<a href="" class="mobile-header-social-link link">
+									<svg class="mobile-header-social-icon" width="24" height="24">
+										<use href="./images/sprites/sprite.svg#icon-social-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="mobile-header-social-item">
+								<a href="" class="mobile-header-social-link link">
+									<svg class="mobile-header-social-icon" width="24" height="24">
+										<use href="./images/sprites/sprite.svg#icon-social-twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="mobile-header-social-item">
+								<a href="" class="mobile-header-social-link link">
+									<svg class="mobile-header-social-icon" width="24" height="24">
+										<use href="./images/sprites/sprite.svg#icon-social-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="mobile-header-social-item">
+								<a href="" class="mobile-header-social-link link">
+									<svg class="mobile-header-social-icon" width="24" height="24">
+										<use href="./images/sprites/sprite.svg#icon-social-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 		<!-- MAIN -->
@@ -189,13 +253,25 @@
 
 					<ul class="works-list list">
 						<li class="work-list-item">
-							<img src="./images/studio/works/works-01.jpg" alt="Desktop application" />
+							<img
+								srcset="./images/studio/works/works-01@2x.jpg 2x"
+								src="./images/studio/works/works-01.jpg"
+								alt="Desktop application"
+							/>
 						</li>
 						<li class="work-list-item">
-							<img src="./images/studio/works/works-02.jpg" alt="Mobile application" />
+							<img
+								srcset="./images/studio/works/works-02@2x.jpg 2x"
+								src="./images/studio/works/works-02.jpg"
+								alt="Mobile application"
+							/>
 						</li>
 						<li class="work-list-item">
-							<img src="./images/studio/works/works-03.jpg" alt="Adaptive layout" />
+							<img
+								srcset="./images/studio/works/works-03@2x.jpg 2x"
+								src="./images/studio/works/works-03.jpg"
+								alt="Adaptive layout"
+							/>
 						</li>
 					</ul>
 				</div>
@@ -208,7 +284,11 @@
 
 					<ul class="team-list list">
 						<li class="team-list-item">
-							<img src="./images/studio/team/team-01.jpg" alt="Product designer" />
+							<img
+								srcset="./images/studio/team/team-01@2x.jpg 2x"
+								src="./images/studio/team/team-01.jpg"
+								alt="Product designer"
+							/>
 							<div class="team-card-content-wrapper">
 								<h3 class="subtitle">Mark Guerrero</h3>
 								<p class="section-txt">Product Designer</p>
@@ -245,7 +325,11 @@
 							</div>
 						</li>
 						<li class="team-list-item">
-							<img src="./images/studio/team/team-02.jpg" alt="Frontend developer" />
+							<img
+								srcset="./images/studio/team/team-02@2x.jpg 2x"
+								src="./images/studio/team/team-02.jpg"
+								alt="Frontend developer"
+							/>
 							<div class="team-card-content-wrapper">
 								<h3 class="subtitle">Tom Ford</h3>
 								<p class="section-txt">Frontend Developer</p>
@@ -282,7 +366,11 @@
 							</div>
 						</li>
 						<li class="team-list-item">
-							<img src="./images/studio/team/team-03.jpg" alt="Marketing specialist" />
+							<img
+								srcset="./images/studio/team/team-03@2x.jpg 2x"
+								src="./images/studio/team/team-03.jpg"
+								alt="Marketing specialist"
+							/>
 							<div class="team-card-content-wrapper">
 								<h3 class="subtitle">Camila Garcia</h3>
 								<p class="section-txt">Marketing</p>
@@ -319,7 +407,11 @@
 							</div>
 						</li>
 						<li class="team-list-item">
-							<img src="./images/studio/team/team-04.jpg" alt="UI designer" />
+							<img
+								srcset="./images/studio/team/team-04@2x.jpg 2x"
+								src="./images/studio/team/team-04.jpg"
+								alt="UI designer"
+							/>
 							<div class="team-card-content-wrapper">
 								<h3 class="subtitle">Daniel Wilson</h3>
 								<p class="section-txt">UI Designer</p>
@@ -411,7 +503,7 @@
 			</section>
 		</main>
 		<!-- FOOTER -->
-		<footer class="footer">
+		<footer class="footer section">
 			<div class="container">
 				<div class="footer-logo-desc-wrapper">
 					<a class="logo link" href="./index.html">
@@ -458,8 +550,10 @@
 				<div class="footer-subscribe-wrapper">
 					<p class="footer-subscribe-txt">Subscribe</p>
 					<form class="footer-form">
-						<input class="footer-input" type="email" name="subscribe_email" id="subscribe-email" placeholder=" " />
-						<label for="subscribe-email" class="footer-form-input-desc">E-mail</label>
+						<div class="footer-form-input-desc-wrapper">
+							<input class="footer-input" type="email" name="subscribe_email" id="subscribe-email" placeholder=" " />
+							<label for="subscribe-email" class="footer-form-input-desc">E-mail</label>
+						</div>
 						<button type="submit" class="footer-subscribe-btn">
 							<span class="footer-subscribe-btn-txt">Subscribe</span>
 							<svg class="footer-subscribe-icon" width="24" height="24">
@@ -471,7 +565,8 @@
 			</div>
 		</footer>
 
-		<!-- MODAL WINDOW SCRIPT -->
+		<!-- MODAL WINDOW AND MOBILE MENU SCRIPTS -->
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
